@@ -1,0 +1,8 @@
+.App {
+  margin: auto;
+  background-color: black;
+}
+.card-list {
+  display: flex;
+  padding: 30px;
+}
