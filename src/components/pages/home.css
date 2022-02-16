@@ -1,0 +1,11 @@
+.page {
+  box-sizing: border-box;
+  margin-top: 40px;
+  /* padding-top: 60px; */
+}
+.main{
+  background-color: black;
+  /* min-height:max-content; */
+  padding:5.5pc;
+ 
+}

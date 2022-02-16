@@ -1,14 +1,14 @@
-import { cardDetails } from "./components/cards/CardDetails";
 import "./App.css";
-import CardList from "./components/cards/CardList";
-import NavBar from "./components/navbar/Navbar";
+import Home from "./components/pages/Home";
+import { Routes, Route } from "react-router-dom";
+import HomeDetailsPage from "./components/pages/HomeDetailsPage";
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <div className="card-list">
-        <CardList cardDetails={cardDetails} />
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="s/homes/search_mode" element={<HomeDetailsPage/>}/>
+      </Routes>
     </div>
   );
 }

@@ -1,8 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 .App {
-  margin: auto;
-  background-color: black;
-}
-.card-list {
-  display: flex;
-  padding: 30px;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto";
 }
