@@ -9,15 +9,14 @@ const Root = styled("div")(({ theme }) => ({
   padding: theme.spacing(1.5),
   [theme.breakpoints.down("xs")]: {
     maxWidth: 250,
-    
+    maxHeight: 350,
   },
   [theme.breakpoints.up("md")]: {
     maxWidth: 350,
-    
+    // maxHeight: 350,
   },
   [theme.breakpoints.up("lg")]: {
     maxWidth: 340,
-    
   },
 }));
 
@@ -25,25 +24,36 @@ const Cards = (props) => {
   const { name, color, distance, image } = props;
   return (
     <Root>
-      <Card
-        className="card-array"
-        sx={{ maxWidth:370 , borderRadius: 3 }}
-      >
+      <Card className="card-array" sx={{ maxWidth: 370, borderRadius: 3 }}>
         <CardActionArea>
-          <CardMedia component="img" height="220" image={image} alt={name} />
+          <CardMedia
+            component="img"
+            sx={{ maxHeight: 200 }}
+            image={image}
+            alt={name}
+          />
           <CardContent
-            sx={{ bgcolor: color, padding: 2, color: "white", height: 200 }}
+            sx={{
+              bgcolor: color,
+              padding: 2,
+              color: "white",
+              height: { sm: 200, md: 150, lg: 200 },
+            }}
           >
             <Typography
               gutterBottom
               variant="h4"
-              component="div"
+              // component="div"
               fontWeight="bold"
-              fontSize="32px"
+              sx={{ fontSize: { lg: "2rem", md: "1.2rem" } }}
             >
               {name}
             </Typography>
-            <Typography variant="body2" color="whitesmoke" fontSize="20px">
+            <Typography
+              variant="body2"
+              color="whitesmoke"
+              sx={{ fontSize: { lg: "1.25rem", md: "1rem" } }}
+            >
               {distance} Kilometers away
             </Typography>
           </CardContent>

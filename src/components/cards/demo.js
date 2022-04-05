@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import Cards from "./Cards";
-
+import "./card.css";
 import { Typography, Box, Stack } from "@mui/material";
 
 import ArrowBackIosNewRoundedIcon from "@mui/icons-material/ArrowBackIosNewRounded";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
 import { IconButton } from "@mui/material";
 // import Carousel from "react-grid-carousel";
+import Grid from "@mui/material/Grid";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -26,68 +27,53 @@ const settings = {
       },
     },
     {
-      breakpoint: 890,
-      settings: {
-        slidesToShow: 2,
-      },
-    },
-    {
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
       },
     },
     {
-      breakpoint: 600,
+      breakpoint: 480,
       settings: {
         slidesToShow: 1,
       },
     },
   ],
 };
-const sliderSettings = {
-  arrows: false,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  infinite: true,
-};
 
-const CardList = ({ cardDetails }) => {
+const Demo = ({ cardDetails }) => {
   const [sliderRef, setSliderRef] = useState(null);
-  const cardArray = cardDetails.map((details) => (
-    <Cards
-      key={details.name}
-      name={details.name}
-      color={details.color}
-      image={details.imageUrl}
-      distance={details.distance}
-    />
-  ));
+ 
   return (
     <>
-      <Box sx={{ m: { xs: 8, md: 8, lg: 10 } }}>
-        <Box sx={{ display: "flex", justifyContent: "space-between", pr: 10 }}>
-          <Typography
-            sx={{
-              flexGrow: 1,
-              fontWeight: 500,
-              mx: 2,
+     
+        <Grid
+          container
+          spacing={{ xs: 2, sm: 6 }}
+          sx={{ mb: 4 }}
+          direction="row"
+        >
+          <Grid item xs="sm">
+            <Typography
+              sx={{
+                fontWeight: 500,
 
-              pb: 3,
-              fontSize: { xs: "1.5rem", md: "2rem", lg: "3rem" },
-            }}
-            variant="h2"
-          >
-            Inspiration for your next trip
-          </Typography>
-
-          <Stack
-            spacing={2}
+                fontSize: { xs: "1.5rem", md: "2rem", lg: "2.5rem" },
+              }}
+              varient="h2"
+            >
+              Inspiration for your next trip
+            </Typography>
+          </Grid>
+          <Grid
+            item
+            xs="sm"
             direction="row"
             sx={{
               height: "35px",
               width: "35px",
-              display: { xs: "flex", sm: "flex", md: "flex", lg: "none" },
+            
+              display: { xs: "flex", md: "none", lg: "none" },
             }}
           >
             <IconButton
@@ -112,10 +98,11 @@ const CardList = ({ cardDetails }) => {
             >
               <ArrowForwardIosRoundedIcon />
             </IconButton>
-          </Stack>
-        </Box>
-        {/* <Box sx={{ display: { sx: "flex", md: "flex" } }}></Box> */}
-        <Slider {...settings} ref={setSliderRef}>
+          </Grid>
+        </Grid>
+    
+    
+        <Slider {...settings} ref={setSliderRef} >
           {cardDetails.map((details) => (
             <Cards
               key={details.name}
@@ -126,9 +113,9 @@ const CardList = ({ cardDetails }) => {
             />
           ))}
         </Slider>
-      </Box>
+     
     </>
   );
 };
 
-export default CardList;
+export default Demo;

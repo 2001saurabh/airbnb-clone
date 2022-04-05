@@ -59,12 +59,12 @@ const BootstrapButton = styled(Button)({
   color: "black",
   boxShadow: "#f2f2f2",
   textTransform: "none",
-  fontSize: 16,
-  marginLeft: 140,
+  fontSize: "1rem",
+  // marginLeft: 140,
   borderRadius: 30,
   padding: "8px 12px",
-
-  lineHeight: 1.5,
+  maxWidth: "25rem",
+  lineHeight: 1,
   backgroundColor: "white",
   border: "1px solid #f5f5f5",
   fontFamily: [
@@ -86,7 +86,6 @@ const BootstrapButton = styled(Button)({
   "&:active": {
     boxShadow: "none",
     backgroundColor: "#fff",
-  
   },
   "&:focus": {
     boxShadowBottom: "1px solid #f2f2f2",
@@ -121,8 +120,9 @@ function SearchButton() {
               ml: 15,
               p: 0.8,
               borderRadius: 20,
+              bgcolor: "rgb(255,56,92)",
+              color: "white",
             }}
-            style={{ backgroundColor: "#ff385c", color: "white" }}
           />
         }
         className="profile-button"

@@ -1,0 +1,13 @@
+.leftBtn,
+.rightBtn {
+  position: relative;
+  z-index: 10;
+  width: 30px;
+  padding: 2px;
+  height: 30px;
+  color: black !important;
+  background-color: #f2f2f2 !important;
+  border-radius: 50%;
+  border: "0.25px solid #F3F3F3A0";
+}
+
