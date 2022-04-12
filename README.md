@@ -49,7 +49,14 @@
 
 # Experience this project to your desktop with this steps 
 - Clone the repo by following command ```git clone https://github.com/2001saurabh/airbnb-clone.git```
-- Do install all dependencies with command ```js npm i``` or ```js yarn i```
+- Do install all dependencies with command 
+```js
+  npm i
+``` 
+-or
+```js
+  yarn i
+```
 - open terminal and...
 - In  terminal, do run the folder by the following commands
 ```js
