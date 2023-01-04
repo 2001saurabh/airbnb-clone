@@ -6,7 +6,7 @@
  [whatsappweb.com](https://whatsapp-clone-frontend-project.vercel.app/)
 >
 > 
- [whatsapp-backend.com] (https://whatsapp-clone-backend-project.vercel.app/)
+ [whatsapp-backend.com](https://whatsapp-clone-backend-project.vercel.app/)
 >
 # Technology We Used
 1. CSS | Material UI
