@@ -2,10 +2,10 @@
 
 
 # Link of Deployed project
-> *** Frontend ***
+> 
  [whatsappweb.com](https://whatsapp-clone-frontend-project.vercel.app/)
 >
-> *** backend***
+> 
  [whatsapp-backend.com] (https://whatsapp-clone-backend-project.vercel.app/)
 >
 # Technology We Used
@@ -17,7 +17,7 @@
 6. Socket.io
 
 # Features
-> ***Landing Page of the Airbnb.com***
+> ***Login/ Signup window***
 >
 ![loginpage](https://user-images.githubusercontent.com/64681134/210566535-b96c8365-420e-45a8-ae71-dfb1cb463a14.jpg)
 >
