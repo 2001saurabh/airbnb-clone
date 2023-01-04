@@ -1,44 +1,55 @@
-# whatsappweb-project
+# airbnb.com-project
+> Airbnb Inc.is an American company that operates an online marketplace for lodging, primarily homestays for vacation rentals, and tourism activities.
+> Airbnb, as in “Air Bed and Breakfast,” is a service that lets property owners rent out their spaces to travelers looking for a place to stay. Travelers can rent a space for multiple people to share, a shared space with private rooms, or the entire property for themselves.
+# Development link of project
 
-
-# Link of Deployed project
-> 
- [airbnbclone.com](https://whatsapp-clone-frontend-project.vercel.app/)
->
-
+> [airbnb.com](https://airbnbclonedeployed.netlify.app)
 # Technology We Used
 1. CSS | Material UI
 2. JavaScript 
 3. React JS | Redux
-
+4. JSON Web Server
 
 # Features
-> ***Login/ Signup window***
+> ***Landing Page of the Airbnb.com***
 >
-![loginpage](https://user-images.githubusercontent.com/64681134/210566535-b96c8365-420e-45a8-ae71-dfb1cb463a14.jpg)
+![1](https://user-images.githubusercontent.com/64681134/162973733-43d5a8a0-fdf2-40f8-bb41-6aa1e3c891e3.jpg)
 >
-> ***Default Chat window***
+![2](https://user-images.githubusercontent.com/64681134/162973834-79921432-ca6e-44f5-8d94-31305cedeaa4.jpg)
 >
- ![default page ](https://user-images.githubusercontent.com/64681134/210566594-e3dc8e1d-4456-4823-a5f3-83f13df6e24c.jpg)
+![3](https://user-images.githubusercontent.com/64681134/162973860-94f68781-4a70-4278-8a64-ec4d5d385696.jpg)
 >
-> ***Different drawers to know about peoples profile name and other details***
+![4](https://user-images.githubusercontent.com/64681134/162973893-ed7b5266-2ea5-4d17-8505-5339efd3e673.jpg)
 >
-![contact drawers](https://user-images.githubusercontent.com/64681134/210566614-2bc21d3d-4034-480a-93fc-2712f70882c4.jpg)
+![5](https://user-images.githubusercontent.com/64681134/162973922-d2983706-b002-4bdf-96fc-a7d6e668b339.jpg)
 >
-![contact drawers](https://user-images.githubusercontent.com/64681134/210566614-2bc21d3d-4034-480a-93fc-2712f70882c4.jpg)
+> ***Signin and Signup Page*** 
 >
-![settings](https://user-images.githubusercontent.com/64681134/210566552-261194c1-1dd7-4e8a-b4e5-39d0afd611b9.jpg)
+![7](https://user-images.githubusercontent.com/64681134/162973960-53eaa3b6-9356-4acc-a8ff-c30989d9d64e.jpg)
 >
-> ***Chat window - Users can share media messages at real time*** 
+![8](https://user-images.githubusercontent.com/64681134/162973985-7ebfedcf-fbbc-4441-bbc6-29cf5fbf5243.jpg)
 >
-![chat window](https://user-images.githubusercontent.com/64681134/210566576-0a6fcd0f-c8cc-4fe9-ab8c-6336b4934e33.jpg)
+> ***user can explore all hotels and houses with category***
 >
-
-
+![11](https://user-images.githubusercontent.com/64681134/162974032-70544645-8722-4fbc-826c-82ec7a88d7aa.jpg)
+>
+> ***Individual hotel*** 
+>
+![12](https://user-images.githubusercontent.com/64681134/162974067-8d1bfea9-6ed8-4137-9240-48fe9a796f75.jpg)
+>
+![13](https://user-images.githubusercontent.com/64681134/162974107-519d9106-8ec8-4cf3-b2ed-c095fecff350.jpg)
+>
+![17](https://user-images.githubusercontent.com/64681134/162974129-88c13d9d-49d4-4cb0-8e38-37abbb69e3e8.jpg)
+>
+> ***Payment page*** 
+>
+![19](https://user-images.githubusercontent.com/64681134/162974149-fde57487-2541-4550-9fad-16a63f5b9ed4.jpg)
+>
+![20](https://user-images.githubusercontent.com/64681134/162974161-4fdeb519-e750-416f-ace0-0c928d48fe71.jpg)
 
 # Experience this project to your desktop with this steps 
-- Clone the repo by following command ```git clone https://github.com/2001saurabh/whatsapp-clone.git```
-- Do install all dependencies in each folder (client, server and socket) with command 
+- Clone the repo by following command ```git clone https://github.com/2001saurabh/airbnb-clone.git```
+- Do install all dependencies with command 
 ```js
   npm i
 ``` 
@@ -46,13 +57,10 @@ or
 ```js
   yarn i
 ```
-- open total three terminal and 
-- In following terminals,  
+- open terminal and
+- In  terminal, do run the folder by the following commands
 ```js
-
   npm start
 ```
-
--   It will show a message ```You can now view airbnb in the browser in http://localhost:3000.```
+-  It will show a message ```You can now view airbnb in the browser in http://localhost:3000.```
 - Then you can Navigate through all the pages from landing page to other pages like hotel and rental houses list page, individual house detail page, explore the hotels and reserve hotel by setting up dates, payment page etc. (on landing page you can go to next page by clicking on button ```i am flexible```.)
-- If you like the project then please leave a :heart: and :star:
