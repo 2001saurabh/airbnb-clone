@@ -3,10 +3,10 @@
 
 # Link of Deployed project
 > *** Frontend ***
-> [whatsappweb.com](https://whatsapp-clone-frontend-project.vercel.app/)
+ [whatsappweb.com](https://whatsapp-clone-frontend-project.vercel.app/)
 >
 > *** backend***
-> [whatsapp-backend.com] (https://whatsapp-clone-backend-project.vercel.app/)
+ [whatsapp-backend.com] (https://whatsapp-clone-backend-project.vercel.app/)
 >
 # Technology We Used
 1. CSS | Material UI
@@ -33,14 +33,11 @@
 >
 ![settings](https://user-images.githubusercontent.com/64681134/210566552-261194c1-1dd7-4e8a-b4e5-39d0afd611b9.jpg)
 >
-> ***Chat window*** 
+> ***Chat window - Users can share media messages at real time*** 
 >
 ![chat window](https://user-images.githubusercontent.com/64681134/210566576-0a6fcd0f-c8cc-4fe9-ab8c-6336b4934e33.jpg)
 >
-> ***Users can share media messages at real time***
->
-![Screenshot 2022-12-22 171821](https://user-images.githubusercontent.com/64681134/210566815-4feb79db-7d07-4751-bc06-6ed8e976f0b1.jpg)
->
+
 
 
 # Experience this project to your desktop with this steps 
