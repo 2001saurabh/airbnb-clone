@@ -3,18 +3,14 @@
 
 # Link of Deployed project
 > 
- [whatsappweb.com](https://whatsapp-clone-frontend-project.vercel.app/)
+ [airbnbclone.com](https://whatsapp-clone-frontend-project.vercel.app/)
 >
-> 
- [whatsapp-backend.com](https://whatsapp-clone-backend-project.vercel.app/)
->
+
 # Technology We Used
 1. CSS | Material UI
 2. JavaScript 
-3. React JS | Context-Api
-4. Node
-5. MongoDB atlas & mongoose
-6. Socket.io
+3. React JS | Redux
+
 
 # Features
 > ***Login/ Signup window***
@@ -53,16 +49,10 @@ or
 - open total three terminal and 
 - In following terminals,  
 ```js
-  cd client 
+
   npm start
 ```
-```js
-  cd server
-  npm start
-```
-```js
-  cd socket
-  npm start
-```
--  It will show a message ```You can now view whatsapp-clone in the browser in http://localhost:3000.```
+
+-   It will show a message ```You can now view airbnb in the browser in http://localhost:3000.```
+- Then you can Navigate through all the pages from landing page to other pages like hotel and rental houses list page, individual house detail page, explore the hotels and reserve hotel by setting up dates, payment page etc. (on landing page you can go to next page by clicking on button ```i am flexible```.)
 - If you like the project then please leave a :heart: and :star:
