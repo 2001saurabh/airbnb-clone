@@ -8,7 +8,7 @@ import ResponsiveAppBar from "../navbar/Navbar";
 
 import Amenties from "../homeDetails/Amenties";
 import AppsIcon from "@mui/icons-material/Apps";
-import { FooterLinks } from "../footer/FooterLinks";
+import { FooterLinks } from "../footer/footerLinks";
 import Spinner from "react-spinkit";
 import Footer from "../footer/Footer";
 import {
@@ -65,10 +65,10 @@ const imageData = [
   },
 ];
 
-function srcset(image, size, rows = 2, cols = 1) {
+function srcset(image, size, rows = 1, cols = 1) {
   return {
-    src: `${image}?w=${size}&h=${size}&fit=crop&auto=format`,
-    srcSet: `${image}?w=${size}&h=${size}&fit=crop&auto=format&dpr=2 2x`,
+    src: `${image}?im_w=${size}&h=${size}&fit=crop&auto=format`,
+    srcSet: `${image}?im_w=${size}&h=${size}&fit=crop&auto=format&dpr=2 2x`,
   };
 }
 
@@ -234,7 +234,7 @@ function HomeDetails(props) {
                   <Skeleton height={100} width={200} animation="wave" />
                 ) : ( */}
                 <img
-                  {...srcset(item.url, 400, item.rows, item.cols)}
+                  {...srcset(item.url, 720, item.rows, item.cols)}
                   alt={item.title}
                   // loading="lazy"
                   // style={{ backdropFilter: "brightness(0)" }}

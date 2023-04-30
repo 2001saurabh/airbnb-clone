@@ -9,7 +9,9 @@ import {
 export const fetchList = (keyword) => async (dispatch) => {
   try {
     dispatch(fetchListRequest());
-    const list = await axios.get(`https://airbnbdb2022.herokuapp.com/data?q=${keyword}`);
+    const list = await axios.get(
+      `https://airbnb-db.onrender.com/data?q=${keyword}`
+    );
     console.log(list.data);
     dispatch(fetchListSuccess(list.data));
   } catch (error) {
@@ -20,12 +22,13 @@ export const fetchList = (keyword) => async (dispatch) => {
   }
 };
 
-
-export const appendToList = ({ page = 1, perPage = 11, keyword = ""}) => async (dispatch) => {
+export const appendToList =
+  ({ page = 1, perPage = 11, keyword = "" }) =>
+  async (dispatch) => {
     try {
       dispatch(fetchListRequest());
       const list = await axios.get(
-        `https://airbnbdb2022.herokuapp.com/data?q=${keyword}&page_no=${page}&per_page=${perPage}`
+        `https://airbnb-db.onrender.com/data?q=${keyword}&page_no=${page}&per_page=${perPage}`
       );
       console.log(list.data);
       dispatch(addListSuccess(list.data));
@@ -36,7 +39,6 @@ export const appendToList = ({ page = 1, perPage = 11, keyword = ""}) => async (
       dispatch(fetchListFailure(error));
     }
   };
-
 
 export const fetchListRequest = () => {
   return {

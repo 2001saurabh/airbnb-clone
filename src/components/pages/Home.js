@@ -6,7 +6,7 @@ import { cardDetails, BigcardDetails, LargeBanner } from "../cards/CardDetails";
 import NavBar from "../navbar/Navbar";
 import LargeCard from "../cards/LargeCard";
 import Footer from "../footer/Footer";
-import { FooterLinks } from "../footer/FooterLinks";
+import { FooterLinks } from "../footer/footerLinks";
 import Hero from "../herosection/Hero";
 import TwoCard from "../cards/TwoCard";
 

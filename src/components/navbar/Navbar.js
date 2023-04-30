@@ -13,7 +13,7 @@ import logoSvg from "../../assests/airbnb.svg";
 import { grey } from "@mui/material/colors";
 import { Button, Stack } from "@mui/material";
 import LanguageIcon from "@mui/icons-material/Language";
-import ProfileButton from "./ProfileButton";
+import ProfileButton from "./profileButton";
 import SearchButton from "./SearchBar";
 import { ReactComponent as LogoIcon } from "../../assests/svg/logo.svg";
 
@@ -101,7 +101,7 @@ const Navbar = () => {
             ) : (
               <Stack direction="row" sx={{ alignItems: "center" }}>
                 <Stack direction="row" spacing={2}>
-                  <Link to="/host/homes">
+                  {/* <Link to="/host/homes"> */}
                     <Button
                       disableRipple
                       sx={{
@@ -116,7 +116,7 @@ const Navbar = () => {
                     >
                       Become a host
                     </Button>
-                  </Link>
+                  {/* </Link> */}
                 </Stack>
 
                 <Stack direction="row" spacing={2}>

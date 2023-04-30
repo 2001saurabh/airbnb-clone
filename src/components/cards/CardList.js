@@ -6,6 +6,7 @@ import { Typography, Box, Stack } from "@mui/material";
 import ArrowBackIosNewRoundedIcon from "@mui/icons-material/ArrowBackIosNewRounded";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
 import { IconButton } from "@mui/material";
+import { Link, useLocation } from "react-router-dom";
 // import Carousel from "react-grid-carousel";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -115,17 +116,19 @@ const CardList = ({ cardDetails }) => {
           </Stack>
         </Box>
         {/* <Box sx={{ display: { sx: "flex", md: "flex" } }}></Box> */}
-        <Slider {...settings} ref={setSliderRef}>
-          {cardDetails.map((details) => (
-            <Cards
-              key={details.name}
-              name={details.name}
-              color={details.color}
-              image={details.imageUrl}
-              distance={details.distance}
-            />
-          ))}
-        </Slider>
+        <Link to="/s/homes/search_mode">
+          <Slider {...settings} ref={setSliderRef}>
+            {cardDetails.map((details) => (
+              <Cards
+                key={details.name}
+                name={details.name}
+                color={details.color}
+                image={details.imageUrl}
+                distance={details.distance}
+              />
+            ))}
+          </Slider>
+        </Link>
       </Box>
     </>
   );

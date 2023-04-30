@@ -12,7 +12,7 @@ import DestCard from "../cards/DestCard";
 import { fetchList } from "../../api/redux/index";
 import { appendToList } from "../../api/redux/index";
 import Footer from "../footer/Footer";
-import { FooterLinks } from "../footer/FooterLinks";
+import { FooterLinks } from "../footer/footerLinks";
 import Skeleton from "@mui/material/Skeleton";
 
 function HomeList() {

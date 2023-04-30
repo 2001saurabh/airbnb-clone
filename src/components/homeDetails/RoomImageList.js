@@ -12,8 +12,10 @@ import { useParams } from "react-router-dom";
 
 function srcset(image, width, height, rows = 1, cols = 1) {
   return {
-    src: `${image}?w=${width * cols}&h=${height * rows}&fit=crop&auto=format`,
-    srcSet: `${image}?w=${width * cols}&h=${
+    src: `${image}?im_w=${width * cols}&h=${
+      height * rows
+    }&fit=crop&auto=format`,
+    srcSet: `${image}?im_w=${width * cols}&h=${
       height * rows
     }&fit=crop&auto=format&dpr=2 2x`,
   };
@@ -39,12 +41,12 @@ export default function RoomImageList() {
           sx={{
             width: 800,
             minHeight: "100%",
-            bgcolor: "black",
+
             // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
             transform: "translateZ(0)",
           }}
           rowHeight={200}
-          gap={1}
+          gap={8}
         >
           {data?.images.map((item) => {
             const cols = item.isHeroImage ? 2 : 1;
@@ -58,13 +60,15 @@ export default function RoomImageList() {
                 sx={{
                   cursor: "pointer",
                   bgcolor: "black",
+                  objectFit: "contain",
+                  overflow: "hidden",
                   "&:hover": {
                     filter: `brightness(0.93)`,
                   },
                 }}
               >
                 <img
-                  {...srcset(item.url, 450, 200, rows, cols)}
+                  {...srcset(item.url, 720, 200, rows, cols)}
                   alt={item.title}
                   loading="lazy"
                 />
